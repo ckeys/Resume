@@ -22,7 +22,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/pdfobject.min.js"></script>
+    <style type="text/css">
+        .pdfobject-container { height: 600px; width: 1000px;}
+        .pdfobject { border: 1px solid #666; }
+    </style>
 
+    
   </head>
 
   <body id="page-top">
@@ -62,6 +68,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="indexEng.html">English Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#mythesis">毕业论文 My Thesis</a>
           </li>
         </ul>
       </div>
@@ -388,6 +397,33 @@
               <i class="fa-li fa fa-trophy text-warning"></i>
               首都师范大学校级三好学生 2014</li>
           </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="mythesis">
+        <div class="my-auto">
+          <h2 class="mb-5">毕业论文 My Thesis</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <!-- <div class="resume-content mr-auto">
+              <h3 class="mb-0">加拿大皇后大学 Queen's University (Canada)</h3>
+              <div class="subheading mb-3"> 硕士 Master of Applied Science (全奖) </div>
+              <div>计算机应用 - 软件工程库挖掘</div>
+              <p>绩点 GPA: 4.15 OUT OF 4.30</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Sep 2015 - Nov 2017</span>
+
+            </div> -->
+            <div id="pdf">
+              <script type="text/javascript">
+                PDFObject.embed("./Thesis.pdf", "#pdf");
+              </script>
+            </div>
+          </div>
+
+          
+
         </div>
       </section>
 
